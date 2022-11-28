@@ -36,10 +36,10 @@ class Solution {
 
     ArrayList<Integer> findSubarray(int a[], int n) {
         // code here
-     int right = 0;
-        int start = 0;
-        int sum =0;
-        int maxSum = 0;
+     int right=0; 
+     int start=0;
+     int sum=0;
+     int maxSum = 0;
 
         ArrayList<Integer> list = new ArrayList<>();
         ArrayList<Integer> ans = null; 
