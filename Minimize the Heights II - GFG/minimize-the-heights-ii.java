@@ -33,7 +33,8 @@ import java.util.*;
 // User function Template for Java
 
 class Solution {
-    int getMinDiff(int[] arr, int n, int k) {
+    int getMinDiff(int[] arr, int n, int k) 
+    {
         // code here
         Arrays.sort(arr);
         int ans = arr[n-1]-arr[0];
