@@ -54,10 +54,12 @@ class GFG {
 class Solution {
     int solve(int N, int[] A) {
         // code here
-         int i;
+        int i;
         for (i = N-1; i >= 0; i--)
+        {
             if (A[i]+1 <= 9)
                 break;
+        }
         return i+1;
     }
 };
