@@ -17,7 +17,7 @@ class Array {
         while(t-- > 0)
         {
             int n = sc.nextInt();
-            int a[] = new int[n + 1];
+            int a[] = new int[n];
             
             for(int i=0;i<n;i++){
                 a[i] = sc.nextInt();
@@ -39,8 +39,8 @@ class Solution
 { 
     public static int findSum(int A[],int N) 
     {
-        //code here
-        Arrays.sort(A);
-        return A[0]+A[N];
+       Arrays.sort(A);
+
+      return A[0]+A[N-1];
     }
 }
