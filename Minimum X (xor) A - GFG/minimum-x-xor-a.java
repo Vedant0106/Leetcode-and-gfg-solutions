@@ -33,27 +33,29 @@ class Solution
     public static int minVal(int a, int b) 
     {
     // return a^b;
-    int setBits = Integer.bitCount(b);
-    int setBits1 = Integer.bitCount(a);
+    int setBitsb = Integer.bitCount(b);
+    int setBitsa = Integer.bitCount(a);
     int ans = 0;
 
     for (int i = 0; i <= 31; i++) 
     {
         int mask = 1 << i;
+        //building mask: shifting 1 to ith index
         int set = a & mask;
+        // if set =1 then ith index was 1 else 0
 
             // If i'th bit is set also set the
             // same bit in the required number
-        if (set == 0 && setBits > setBits1) 
+        if (set == 0 && setBitsb > setBitsa) 
         {
             // |= bitwise OR assignment ( |= ) 
             // operator uses the binary representation of both operands
             ans |= mask;
-            setBits--;
+            setBitsb--;
             } 
-        else if (set != 0 && setBits1 > setBits) 
+        else if (set != 0 && setBitsa > setBitsb) 
         {
-            setBits1--;
+            setBitsa--;
         } 
         else 
         {
