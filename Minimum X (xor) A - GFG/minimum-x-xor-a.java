@@ -37,7 +37,7 @@ class Solution
     int setBitsa = Integer.bitCount(a);
     int ans = 0;
 
-    for (int i = 0; i <= 31; i++) 
+    for (int i = 0; i < 32; i++) 
     {
         int mask = 1 << i;
         //building mask: shifting 1 to ith index
