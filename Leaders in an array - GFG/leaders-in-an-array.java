@@ -50,24 +50,19 @@ class Solution
     static ArrayList<Integer> leaders(int arr[], int n)
     {
         // Your code here
-        int temp=arr[n-1];
-      Stack<Integer> st=new Stack<>();
-      st.push(temp);
-      for(int i=n-2; i>=0; i--)
-      {
-          if(arr[i]>=temp)
-          {
-              st.push(arr[i]);
-              temp=arr[i];
-          }
-      }
-      ArrayList<Integer> al=new ArrayList<>();
-      
-      while(!st.isEmpty())
-      {
-          al.add(st.pop());
-      }
-      return al;
+       ArrayList<Integer> li = new ArrayList<Integer>();
+       int max = arr[n-1];
+       li.add(max);
+       for(int i=n-2;i>=0;i--)
+       {
+         if(max<=arr[i])
+         {
+             max=arr[i];
+             li.add(max);
+         }
+       }
+       Collections.reverse(li);
+       return(li);
     }
  }
 
