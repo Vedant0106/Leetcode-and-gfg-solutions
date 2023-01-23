@@ -52,28 +52,28 @@ class Solution
         // code here 
           int l=n+m;
 
-        long arr3[]=new long[l];
+        long ans[]=new long[l];
 
         for(int i=0;i<n;i++)
         {
-            arr3[i]=arr1[i];
+            ans[i]=arr1[i];
         }
 
         for(int i=0;i<m;i++)
         {
-            arr3[i+n]=arr2[i];
+            ans[i+n]=arr2[i];
         }
 
-        Arrays.sort(arr3);
+        Arrays.sort(ans);
 
         for(int i=0;i<n;i++)
         {
-            arr1[i]=arr3[i];
+            arr1[i]=ans[i];
         }
 
         for(int i=0;i<m;i++)
         {
-            arr2[i]=arr3[i+n];
+            arr2[i]=ans[i+n];
         }
     }
 }
