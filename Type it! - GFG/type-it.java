@@ -30,11 +30,13 @@ class Solution {
     {
      // code here
            int n = s.length();
-        
+        //n/2-1== matlab ki adha se zada se nhi dekhna hai isko
+        //jo bhi hoga n/2-1 se left jaane pe hi hoga
         for (int i=n/2-1; i>=0; i--)
         {
-        if (s.substring(0, i+ 1).equals(s.substring(i+ 1,2*(i+ 1))))
+        if(s.substring(0, i+ 1).equals(s.substring(i+ 1,2*(i+ 1))))
           {
+              //answer ka formulA
             return (i + 1) + 1 + (n - 2 * (i + 1));
           }
         }
