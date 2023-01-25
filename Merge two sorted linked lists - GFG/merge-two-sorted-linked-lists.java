@@ -92,48 +92,33 @@ class LinkedList
     Node sortedMerge(Node head1, Node head2) {
      // This is a "method-only" submission. 
      // You only need to complete this method
-      Node temp_node = new Node(0);
-
+     Node temp_node = new Node(0);
      Node curr_node = temp_node;
 
-     
-
-     while(head1!=null && head2!=null){
-
-         if(head1.data<head2.data){
-
+     while(head1!=null && head2!=null)
+     {
+         if(head1.data<head2.data)
+         {
              curr_node.next = head1;
-
-             head1 = head1.next;
-
-         }else{
-
-             curr_node.next = head2;
-
-             head2 = head2.next;
-
+              head1 = head1.next;
          }
-
+         else
+         {
+             curr_node.next = head2;
+             head2 = head2.next;
+         }
          curr_node = curr_node.next;
-
      }
-
-     if(head1!=null){
-
+     if(head1!=null)
+     {
          curr_node.next=head1;
-
          head1=head1.next;
-
      }
-
-     if(head2!=null){
-
+     if(head2!=null)
+     {
          curr_node.next=head2;
-
          head2=head2.next;
-
      }
-
      return temp_node.next;
    } 
 }
