@@ -18,14 +18,14 @@ class Solution
         char[]c=str.toCharArray();
         Arrays.sort(c);
         StringBuffer res = new StringBuffer();
-        int s=0;
-        int k=0;
+        int l=0;
+        int u=0;
         
         for(int i=0;i<c.length;i++)
         {
             if(c[i]>='a')
             {
-                s=i;
+                l=i;
                 break;
             }
         }
@@ -34,13 +34,13 @@ class Solution
         {
             if(str.charAt(i)>='A' && str.charAt(i)<='Z')
             {
-                res.append(c[k]);
-                k++;
+                res.append(c[u]);
+                u++;
             }
             else
             {
-                res.append(c[s]);
-                s++;
+                res.append(c[l]);
+                l++;
             }
         }
         return res.toString();
