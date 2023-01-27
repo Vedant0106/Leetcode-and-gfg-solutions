@@ -36,12 +36,11 @@ public class Main {
 class Solution {
     int rowWithMax1s(int arr[][], int n, int m) {
         // code here
-        int c;
         int r=-1;
         int max=0;
         for(int i=0;i<n;i++)
         {   
-            c=0;
+            int c=0;
             for(int j=0;j<m;j++)
             {
                 if(arr[i][j]==1)
