@@ -50,19 +50,13 @@ class Solution
     {
         // your code here
         long ar[] = new long[(int)n];
-
-        for(int i=0;i<n;i++){
-
+        for(int i=0;i<n;i++)
+        {
             ar[i] = arr[(int)arr[i]];
-
- 
-
         }
-
-        for(int i=0;i<n;i++){
-
+        for(int i=0;i<n;i++)
+        {
             arr[i]=ar[i];
-
         }
     }
 }
