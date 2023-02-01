@@ -62,20 +62,21 @@ class GFG {
 class Solution {
     public static int kthLargest(int N, int K, int[] Arr) {
         // code here
-        ArrayList<Integer> arr=new ArrayList<>();
+        ArrayList<Integer> l=new ArrayList<>();
+         
         for(int i=0;i<N;i++)
         {
-            int sum=0;
-       for(int j=i;j<N;j++)
-        {
-           sum+=Arr[j];
-           arr.add(sum);
-       }
+             int sum=0;
+           for(int j=i;j<N;j++)
+            {
+               sum+=Arr[j];
+               l.add(sum);
+            }
         }
-        Collections.sort(arr);
-        Collections.reverse(arr);
+        Collections.sort(l);
+        Collections.reverse(l);
   
-        return arr.get(K-1);
+        return l.get(K-1);
     }
 }
         
