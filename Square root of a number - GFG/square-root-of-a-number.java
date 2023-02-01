@@ -30,14 +30,10 @@ class Solution
 	 {
 		// Your code here
 	      int i =2;
-        while(i*i<=x){
-
+        while(i*i<=x)
+        {
             i++;
-
-        
-
         }
-
         return i-1;
 	 }
 }
