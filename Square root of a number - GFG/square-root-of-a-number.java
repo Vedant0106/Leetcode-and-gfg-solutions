@@ -29,25 +29,15 @@ class Solution
      long floorSqrt(long x)
 	 {
 		// Your code here
-		 long low = 0, high = x, ans = -1;
+	      int i =2;
+        while(i*i<=x){
 
-        while(low<=high) 
-        {
-            long mid = (low + high) / 2;
-            
-            if(mid*mid == x) 
-                return mid;
+            i++;
 
-            else if(mid*mid > x) 
-            {
-                high = mid-1;
-            }
-            else
-            {
-               low = mid + 1;
-                ans = mid;
-            }
+        
+
         }
-        return ans;
+
+        return i-1;
 	 }
 }
