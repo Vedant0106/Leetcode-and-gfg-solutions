@@ -29,7 +29,7 @@ class Solution {
          
     for (int i = 0; i < N; ++i) 
     { 
-        dc *= (2*N-i); 
+        dc = dc*(2*N-i); 
         dc = dc/(i+1); 
     } 
 
