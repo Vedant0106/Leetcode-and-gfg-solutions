@@ -33,7 +33,7 @@ class Solution
     long P = 1;
     while(N>0)
     {
-        c+=(P*(N%9));
+        c+=P*(N%9);
         N=N/9;
         P=P*10;
     }
