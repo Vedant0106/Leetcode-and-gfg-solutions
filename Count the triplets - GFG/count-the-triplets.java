@@ -33,30 +33,22 @@ class Solution {
     int countTriplet(int arr[], int n) {
         // code here
         HashSet<Integer> hs = new HashSet<>();
-        for(int i=0;i<n;i++){
-
+        for(int i=0;i<n;i++)
+        {
             hs.add(arr[i]);
-
         }
-
         int ans = 0;
-
-        for(int i=0;i<n;i++){
-
-            for(int j=i+1;j<n;j++){
-
+        for(int i=0;i<n;i++)
+        {
+            for(int j=i+1;j<n;j++)
+            {
                 int sum = arr[i]+arr[j];
-
-                if(hs.contains(sum)){
-
+                if(hs.contains(sum))
+                {
                     ans++;
-
                 }
-
             }
-
         }
-
         return ans;
     }
 }
