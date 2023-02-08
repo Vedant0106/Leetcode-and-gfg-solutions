@@ -63,7 +63,7 @@ class Solution
                 else if(wt[i-1]<=j)
                     dp[i][j]=Math.max(dp[i-1][j], dp[i-1][j-wt[i-1]]+val[i-1]);
                  
-                else
+                 else
                     dp[i][j]=dp[i-1][j];
                  
              }
