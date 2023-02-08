@@ -43,13 +43,14 @@ class Solution
         {
             if(pat.charAt(0) == S.charAt(i))
             {
-                if(S.substring(i , i+M).equals(pat))
+                if(S.substring(i,i+M).equals(pat))
                 {
                     arr.add(i+1);
                 }
             }
         }
-        if(arr.size() == 0 ){
+        if(arr.size() == 0 )
+        {
             arr.add(-1);
         }
         return arr;
