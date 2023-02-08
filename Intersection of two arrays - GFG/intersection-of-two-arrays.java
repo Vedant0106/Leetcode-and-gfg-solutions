@@ -56,16 +56,16 @@ class Solution {
         // Your code here
         int count=0;
         HashSet<Integer> set= new HashSet<>();
-        for(int val: a)
+        for(int i: a)
         {
-            set.add(val);
+            set.add(i);
         }
-        for(int val:b)
+        for(int i:b)
         {
-            if(set.contains(val))
+            if(set.contains(i))
             {
              count++;
-             set.remove(val);
+             set.remove(i);
             }
        }
     return count;
