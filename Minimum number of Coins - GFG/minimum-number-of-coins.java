@@ -39,13 +39,11 @@ class Solution{
 
         for(int i=0; i<coins.length; i++) 
         {
-           
-                while(coins[i] <= N) 
-                {
-                    ans.add(coins[i]);
-                    N -= coins[i];
-                }
-            
+            while(coins[i] <= N) 
+            {
+                ans.add(coins[i]);
+                N -= coins[i];
+            }
         }
         return ans;
     }
