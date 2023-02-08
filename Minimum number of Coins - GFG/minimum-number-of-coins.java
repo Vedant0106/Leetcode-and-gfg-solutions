@@ -37,13 +37,15 @@ class Solution{
 
         ArrayList<Integer> ans = new ArrayList<>();
 
-        for(int i=0; i<coins.length; i++) {
-            if(coins[i] <= N) {
-                while(coins[i] <= N) {
+        for(int i=0; i<coins.length; i++) 
+        {
+           
+                while(coins[i] <= N) 
+                {
                     ans.add(coins[i]);
                     N -= coins[i];
                 }
-            }
+            
         }
         return ans;
     }
