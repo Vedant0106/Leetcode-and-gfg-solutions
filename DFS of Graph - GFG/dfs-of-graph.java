@@ -40,22 +40,22 @@ class Solution {
     {
         // Code here
         ArrayList<Integer> ans=new ArrayList<>();
-        boolean visited[]=new boolean[V];
+        boolean v[]=new boolean[V];
         
-        DFS(adj,visited,ans,0);
+        DFS(adj,v,ans,0);
         return ans;
     }
 
-    static void DFS(ArrayList<ArrayList<Integer>> adj,boolean visited[],ArrayList<Integer> ans,int src)
+    static void DFS(ArrayList<ArrayList<Integer>> adj,boolean v[],ArrayList<Integer> ans,int src)
     {
-           visited[src]=true;
+           v[src]=true;
            ans.add(src);
            
-        for(int nb:adj.get(src))
+        for(int i:adj.get(src))
         {
-            if(!visited[nb])
+            if(!v[i])
             {
-                DFS(adj,visited,ans,nb);
+                DFS(adj,v,ans,i);
             }
         }
     }
