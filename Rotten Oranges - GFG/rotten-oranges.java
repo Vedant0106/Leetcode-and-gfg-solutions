@@ -31,9 +31,7 @@ class GFG
 
 class Pair{
 
-    int row = 0;
-    int col = 0;
-    int tm = 0;
+    int row = 0, col=0, tm=0;
     Pair(int _row, int _col, int _tm){
         this.row = _row;
         this.col = _col;
