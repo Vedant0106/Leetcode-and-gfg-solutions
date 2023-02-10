@@ -65,7 +65,7 @@ class GFG {
 class Solution {
     public static int getMinimumDays(int N, String S, int[] P) {
         // code here
-     int l=0;
+         int l=0;
          int r=N-1;
          int ans=0;
          while(l<=r)
