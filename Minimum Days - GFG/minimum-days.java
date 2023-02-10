@@ -68,14 +68,18 @@ class Solution {
      int l=0;
          int r=N-1;
          int ans=0;
-         while(l<=r){
+         while(l<=r)
+         {
              int mid=(l+r)/2;
              char arr[]=S.toCharArray();
-             for(int i=0;i<=mid;i++){
+             for(int i=0;i<=mid;i++)
+             {
                  arr[P[i]]='?';
              }
              boolean flag=true;
-             for(int i=0;i<N-1;i++){
+             
+             for(int i=0;i<N-1;i++)
+             {
                  if(arr[i]!='?' && arr[i]==arr[i+1])
                    {
                        flag=false;
