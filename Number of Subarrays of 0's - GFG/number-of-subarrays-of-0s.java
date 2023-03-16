@@ -27,19 +27,19 @@ class GFG{
 
 class Solution{
 	long no_of_subarrays(int N, int [] arr) {
-	 long c=0;
+	 long count=0;
         long ans=0;
         for(int i=0;i<N;i++)
         {
             if(arr[i]==0)
-            ct++;
+            count++;
             else
             {
-                ans+=(ct*(ct+1))/2;
-                ct=0;
+                ans+=(count*(count+1))/2;
+                count=0;
             }
         }
-        ans+=(ct*(ct+1))/2;
+        ans+=(count*(count+1))/2;
         return ans;
         
     }
