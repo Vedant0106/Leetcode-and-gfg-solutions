@@ -29,27 +29,42 @@ class GFG
 class Solution{
    static String secondSmallest(int S, int D){
         // code here
-        if(D==1 || S==1 || S>=9*D) return "-1";
+        if(D==1 || S==1 || S>=9*D) 
+            return "-1";
+            
         boolean isChanged=false;
+        
         StringBuilder sb = new StringBuilder();
-        for(int i=0;i<D;i++) {
+        
+        for(int i=0;i<D;i++) 
+        {
             int digit;
-            if(S>9) {
+            if(S>9) 
+            {
                 digit=9;
                 S-=9;
-            } else {
-                if(i==D-1) {
+            } 
+            else 
+            {
+                if(i==D-1) 
+                {
                     digit=S;
-                } else {
-                    if(S>1) {
+                } 
+                else 
+                {
+                    if(S>1) 
+                    {
                         digit=S-1;
                         S=1;
-                    } else {
+                    } 
+                    else 
+                    {
                         digit=0;
                     }
                 }
             }
-            if(!isChanged && digit<9 && sb.length()>0) {
+            if(!isChanged && digit<9 && sb.length()>0) 
+            {
                 digit++;
                 char c = sb.charAt(sb.length()-1);
                 sb.setCharAt(sb.length()-1,--c);
