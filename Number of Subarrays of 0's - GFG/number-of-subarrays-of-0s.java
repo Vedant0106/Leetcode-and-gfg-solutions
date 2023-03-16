@@ -27,7 +27,7 @@ class GFG{
 
 class Solution{
 	long no_of_subarrays(int N, int [] arr) {
-	 long ct=0;
+	 long c=0;
         long ans=0;
         for(int i=0;i<N;i++)
         {
