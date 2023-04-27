@@ -57,16 +57,6 @@ class Solution {
                 int k = Integer.valueOf(Q.c);
                 String substr = sb.substring(left, right+1);
                 
-                // System.out.println(substr);
-                // for(int ind=0; ind<substr.length(); ind++) pq.add(substr.charAt(ind));
-                // char ch = ' ';
-                // while(k>0){
-                //     ch  = pq.poll();
-                //     k--;
-                // }
-                // pq.clear();
-                // if(ch != ' ') list.add(ch);
-                
                 int [] arr= new int[26];
                 for(int ind=left; ind<= right; ind++) arr[sb.charAt(ind)-'a']++;
                 for(int ind=25; ind>=0; ind--){
@@ -82,15 +72,6 @@ class Solution {
         return list; 
     }
 }
-/*In case the query is of type 1.
-type=1
-c=null
-*/
-
-/*In case the query is of type 2.
-type=2
-c=k
-*/
 
 class query
 {
