@@ -37,50 +37,35 @@ public class Main {
 // } Driver Code Ends
 
 
-class Solution {
+class Solution{
+    
 
-    void rotateMatrix(int arr[][], int n) {
+    void rotateMatrix(int arr[][], int n) 
+    {
 
         //transpose
 
     for(int i=0;i<n;i++){
-
-        for(int j=i+1;j<n;j++){
-
+        for(int j=i+1;j<n;j++)
+        {
             int tem = arr[i][j];
-
             arr[i][j] = arr[j][i];
-
             arr[j][i] = tem;
-
         }
-
     }
-
     //swaping
-
-           for(int j= 0;j<n;j++){
-
-                 int s=0;
-
-                 int e=n-1;
-
-                  while(s<e){
-
-            int temp = arr[s][j];
-
-            arr[s][j] = arr[e][j];
-
-            arr[e][j] = temp;
-
-            s++;
-
-           e--;
-
-        }
-
-    }
-
-}
-
+           for(int j= 0;j<n;j++)
+           {
+                int s=0;
+                int e=n-1;
+                while(s<e)
+                {
+                   int temp = arr[s][j];
+                   arr[s][j] = arr[e][j];
+                   arr[e][j] = temp;
+                   s++;
+                   e--;
+                }
+            }
+     }
 }
